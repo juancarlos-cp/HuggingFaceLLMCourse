@@ -1,0 +1,24 @@
+
+
+
+[{'type': 'function',
+  'function': {'name': 'get_random_number_between',
+   'description': 'Gets a random number between min and max.',
+   'parameters': {'type': 'object',
+    'properties': {'min': {'type': 'integer',
+      'description': 'The minimum number.'},
+     'max': {'type': 'integer', 'description': 'The maximum number.'}},
+    'required': ['min', 'max']},
+   'return': {'type': 'integer',
+    'description': 'A random number between min and max.'}}},
+ {'type': 'function',
+  'function': {'name': 'get_current_time',
+   'description': 'Returns the current time in 24-hour format.',
+   'parameters': {'type': 'object', 'properties': {}},
+   'return': {'type': 'string',
+    'description': 'str: Current time in HH:MM:SS format.'}}}]
+
+
+{"jsonrpc":"2.0","id":1,"result":{"tools":[{"name":"get_random_number_between","description":"\n    Gets a random number between min and max.\n\n    Args:\n        min: The minimum number.\n        max: The maximum number.\n\n    Returns:\n        A random number between min and max.\n    ","inputSchema":{"properties":{"min":{"title":"Min","type":"integer"},"max":{"title":"Max","type":"integer"}},"required":["min","max"],"title":"get_random_number_betweenArguments","type":"object"},"outputSchema":{"properties":{"result":{"title":"Result","type":"integer"}},"required":["result"],"title":"get_random_number_betweenOutput","type":"object"}},{"name":"get_knowledge_base","description":"Retrieve the entire knowledge base as a formatted string.\n\n    Returns:\n        A formatted string containing all Q&A pairs from the knowledge base.\n    ","inputSchema":{"properties":{},"title":"get_knowledge_baseArguments","type":"object"},"outputSchema":{"properties":{"result":{"title":"Result","type":"string"}},"required":["result"],"title":"get_knowledge_baseOutput","type":"object"}}]}}
+
+
